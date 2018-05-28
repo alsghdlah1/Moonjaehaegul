@@ -9,8 +9,6 @@ int main() {
 	int T = 1000;
 	int val=0;
 	int avg=0;
-	int x = 0, y = 0;
-	int count = 0;
 	int sum = 0;
 	printf("N을 입력하시오\n");
 	scanf_s("%d", &NUM);
@@ -18,6 +16,9 @@ int main() {
 	srand((unsigned int)time(NULL));
 
 	for (int i = 0; i < T; i++) {
+		int x = 0, y = 0;
+		int count = 0;
+
 		while (NUM > x && -NUM < y&&-NUM<x&&NUM>y)
 		{
 			val = rand() % 4;
